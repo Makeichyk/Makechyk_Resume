@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+* {
+  /* box-sizing: border-box; */
+  box-sizing: content-box;
+}
+
+.body {
+  background-color: #2F2F2F;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
+header {
+  /* background-image: url("../assets/images/leaves_4.jpeg"); */
+  background: url(../assets/images/leaves_4.jpeg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 20%;
+  height: 600px;
+}
+
+.header-content-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.profile-name {
+  width: 960px;
+  height: 350px;
+  margin-left: 43px;
+  margin-top: 59px;
+}
+
+.name-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.photo-container {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background: url(../assets/images/Batumi\ 10.04.2022.jpg);
+  background-size: cover;
+  background-position: 20%;
+}
+
+.name-container>h1 {
+  margin: 0;
+  color: #FFFFFF;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 97px;
+  line-height: 114px;
+  letter-spacing: 0.05em;
+}
+
+.proffesion-container h2 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 200;
+  font-size: 70px;
+  line-height: 82px;
+  color: #FFFFFF;
+}
+
+.profile-photo {
+  margin: 59px 142px 0px 0px;
+}
