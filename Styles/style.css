@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Roboto:wght@100;400&display=swap');
+
+/* HEADER */
 
 * {
-  /* box-sizing: border-box; */
   box-sizing: content-box;
 }
 
@@ -13,7 +14,6 @@
 }
 
 header {
-  /* background-image: url("../assets/images/leaves_4.jpeg"); */
   background: url(../assets/images/leaves_4.jpeg);
   background-size: 100%;
   background-repeat: no-repeat;
@@ -70,4 +70,164 @@ header {
 
 .profile-photo {
   margin: 59px 142px 0px 0px;
+}
+
+/* INFO BLOCK */
+
+.wrapper {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.content-block {
+  margin-top: 60px;
+  background-color: #FFFFFF;
+  display: flex;
+  border-radius: 40px;
+}
+
+.content-block-title {
+  display: flex;
+  width: 483px;
+  border-radius: 0px;
+  background-color: #0000000c;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-block-title h2 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 200;
+  font-size: 44px;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.1em;
+  color: #000000;
+}
+
+.content-block-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 15px;
+}
+
+.content-block-content-elem p {
+  margin: 14px;
+  font-family: 'Abel';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 4px;
+}
+
+.content-block-content-elem>.p1 {
+  font-size: 33px;
+  color: #343434;
+}
+
+.content-block-content-elem>.p2 {
+  font-size: 25px;
+  color: #343434;
+}
+
+.content-block-content-elem>.p3 {
+  font-size: 25px;
+  color: #73808D;
+}
+
+/* HARD SKILLS */
+
+.hard-skills-block {
+  height: 380px;
+}
+
+.skills-container{
+  margin-left: 20px;
+  display: flex;
+  row-gap: 30px;
+  flex-direction: column;
+}
+
+.skills-container p{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+  letter-spacing: 4px;
+  color: #000000;
+}
+
+.skill-info-contaner{
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill-info-contaner p{
+  margin: 0;
+}
+
+.progress-container {
+  height: 8px;
+  width: 600px;
+  border-radius: 50px;
+  background: #787878;
+}
+.progress-container .progress{
+  height: 100%;
+  border-radius: 50px;
+  transition: width 0.4s ease;
+}
+.progress-container .html {
+  width: 100%;
+  background: #B14434;
+}
+
+.progress-container .css{
+  width: 90%;
+  background: #4697F7;
+}
+
+.progress-container .js{
+  width: 75%;
+  background: #F2A93B;
+}
+
+.progress-container .react{
+  width: 35%;
+  background: #82D7F7;
+}
+
+/* EDUCATION */
+
+.education-block {
+  height: 400px;
+}
+
+/* EXPIRIENCE */
+
+.expirience-block {
+  height: 262px;
+}
+
+/* SOFT SKILLS */
+.soft-skills-block {
+  height: 390px;
+}
+
+.soft-skills-block-elem p {
+  letter-spacing: 8px;
+  margin: 30px;
+}
+
+/* LANGUAGES */
+.language-block {
+  height: 215px;
+}
+
+.language-block-elem p {
+  letter-spacing: 8px;
+  margin: 30px;
 }
