@@ -6,6 +6,16 @@
   box-sizing: content-box;
 }
 
+.hide {
+  /* visibility: hidden; */
+  opacity: 0;
+}
+
+.show {
+  /* visibility: visible; */
+  opacity: 1;
+}
+
 .body {
   background-color: #2F2F2F;
   width: 100vw;
@@ -144,28 +154,34 @@ header {
   height: 380px;
 }
 
-.skills-container{
+.skills-container {
   margin-left: 20px;
   display: flex;
   row-gap: 30px;
   flex-direction: column;
+  /* opacity: 0; */
+  transition: opacity 0.5s;
 }
 
-.skills-container p{
+.skills-container p {
   font-family: 'Roboto';
   font-style: normal;
-  font-weight: 300;
-  font-size: 25px;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 35px;
   letter-spacing: 4px;
-  color: #000000;
 }
 
-.skill-info-contaner{
+.skills-container .procent {
+  font-weight: 200;
+}
+
+.skill-info-contaner {
   display: flex;
   justify-content: space-between;
 }
 
-.skill-info-contaner p{
+.skill-info-contaner p {
   margin: 0;
 }
 
@@ -175,27 +191,30 @@ header {
   border-radius: 50px;
   background: #787878;
 }
-.progress-container .progress{
+
+.progress-container .progress {
+  width: 0%;
   height: 100%;
   border-radius: 50px;
-  transition: width 0.4s ease;
-}
-.progress-container .html {
-  width: 100%;
-  background: #B14434;
+  transition: width 1s;
 }
 
-.progress-container .css{
+.progress-container .html {
+  width: 100%;
+  background: #CD5534;
+}
+
+.progress-container .css {
   width: 90%;
   background: #4697F7;
 }
 
-.progress-container .js{
+.progress-container .js {
   width: 75%;
-  background: #F2A93B;
+  background: #EBD94D;
 }
 
-.progress-container .react{
+.progress-container .react {
   width: 35%;
   background: #82D7F7;
 }
