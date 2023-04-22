@@ -336,3 +336,25 @@ header {
   display: flex;
   padding-left: 65px;
 }
+
+/* PDF */
+.pdf-block {
+  height: 330px;
+  margin-bottom: 60px;
+}
+
+.pdf-block-elem img{
+  width: 215px;
+  height: 215px;
+  transition: width 0.5s, height 0.5s;
+}
+
+.pdf-block-elem img:hover{
+  width: 250px;
+  height: 250px;
+}
+
+.pdf-block-content{
+  display: flex;
+  margin-left: 250px;
+}
