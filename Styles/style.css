@@ -264,7 +264,7 @@ header {
 .portfolio-block {
   height: 400px;
   display: flex;
-  justify-content: space-around
+  column-gap: 50px;
 }
 
 .arrow-container {
@@ -306,4 +306,33 @@ header {
 
 .arrow-right {
   transform: rotate(180deg);
+}
+
+/* CONTACTS */
+
+.contacts-block {
+  height: 130px;
+}
+
+.contacts-block-elem a{
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.contacts-block-elem img{
+  width: 70px;
+  height: 70px;
+  transition: width 0.5s, height 0.5s;
+}
+
+.contacts-block-elem img:hover{
+  width: 90px;
+  height: 90px;
+}
+
+.contacts-block-elem{
+  display: flex;
+  padding-left: 65px;
 }
