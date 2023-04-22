@@ -277,25 +277,25 @@ header {
 
 }
 
-.arrow-left img{
+.arrow-left img {
   width: 50px;
   height: 50px;
   transition: width 0.5s, height 0.5s;
 }
 
-.arrow-left img:hover{
+.arrow-left img:hover {
   width: 55px;
   height: 55px;
   cursor: pointer;
 }
 
-.arrow-right img{
+.arrow-right img {
   width: 50px;
   height: 50px;
   transition: width 0.5s, height 0.5s;
 }
 
-.arrow-right img:hover{
+.arrow-right img:hover {
   width: 55px;
   height: 55px;
   cursor: pointer;
@@ -314,12 +314,14 @@ header {
   transition: opacity 0.5s;
   display: flex;
 }
-.portfolio-links-container img{
+
+.portfolio-links-container img {
   object-fit: cover;
   width: 500px;
   height: 400px;
 }
-.portfolio-links-container:hover{
+
+.portfolio-links-container:hover {
   cursor: pointer;
   opacity: 1;
 }
@@ -334,25 +336,25 @@ header {
   height: 130px;
 }
 
-.contacts-block-elem a{
+.contacts-block-elem a {
   width: 100px;
   height: 100px;
   display: flex;
   align-items: center;
 }
 
-.contacts-block-elem img{
+.contacts-block-elem img {
   width: 70px;
   height: 70px;
   transition: width 0.5s, height 0.5s;
 }
 
-.contacts-block-elem img:hover{
+.contacts-block-elem img:hover {
   width: 90px;
   height: 90px;
 }
 
-.contacts-block-elem{
+.contacts-block-elem {
   display: flex;
   padding-left: 65px;
 }
@@ -363,18 +365,38 @@ header {
   margin-bottom: 60px;
 }
 
-.pdf-block-elem img{
+.pdf-block-elem img {
   width: 215px;
   height: 215px;
   transition: width 0.5s, height 0.5s;
 }
 
-.pdf-block-elem img:hover{
+.pdf-block-elem img:hover {
   width: 250px;
   height: 250px;
 }
 
-.pdf-block-content{
+.pdf-block-content {
   display: flex;
   margin-left: 250px;
+}
+
+.arrow_up {
+  position: absolute;
+  z-index: 1;
+  left: 1350px;
+  top: 3515px;
+  transform: rotate(270deg);
+}
+
+.arrow_up img {
+  width: 50px;
+  height: 50px;
+  left: 80%;
+  transition: width 0.5s, height 0.5s;
+}
+
+.arrow_up img:hover {
+  width: 60px;
+  height: 60px;
 }
