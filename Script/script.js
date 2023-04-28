@@ -73,10 +73,14 @@ function showInViewport() {
     if (contentBlocks[0].getBoundingClientRect().y <= 500) {
       showSkillsContainer();
     }
-    if (rect.y <= 500) {
+    if (rect.y <= 800) {
       contentBlocks[i].classList.remove("hide");
     }
   }
+}
+
+function show(){
+  console.log(contentBlocks[5].getBoundingClientRect())
 }
 
 contentBlocks.forEach((block) => block.classList.add("hide"));
