@@ -391,27 +391,6 @@ header {
   margin-left: 250px;
 }
 
-/* .arrow_up {
-    position: absolute;
-    z-index: 1;
-    left: 1350px;
-    top: 3515px;
-    transform: rotate(270deg);
-  }
-
-  .arrow_up img {
-    width: 50px;
-    height: 50px;
-    left: 80%;
-    transition: width 0.5s, height 0.5s;
-  }
-
-  .arrow_up img:hover {
-    width: 60px;
-    height: 60px;
-  } */
-
-
 @media screen and (max-width: 1279px) {
   header {
     height: 350px;
