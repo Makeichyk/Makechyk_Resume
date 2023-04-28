@@ -98,6 +98,7 @@ header {
 .wrapper {
   margin: 0 auto;
   width: 1200px;
+  padding-bottom: 1px;
 }
 
 .content-block {
@@ -364,7 +365,7 @@ header {
 /* PDF */
 .pdf-block {
   height: 330px;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 .pdf-block-elem img {
@@ -564,11 +565,172 @@ header {
     display: flex;
     align-items: center;
     margin-top: 15px;
+  }
 }
+
+@media screen and (max-width: 767px) {
+  header {
+    height: 200px;
+  }
+
+  .name-container {
+    margin-bottom: 5px;
+  }
+
+  .name-container>h1 {
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 35px
+  }
+
+  .proffesion-container h2 {
+    margin: 0;
+    font-size: 24px;
+    line-height: 31px;
+  }
+
+  .profile-name {
+    margin-left: 18px;
+    margin-top: 37px;
+  }
+
+  .profile-photo {
+    margin: 24px 26px 0px 0px;
+  }
+
+  .photo-container {
+    width: 100px;
+    height: 100px;
+  }
+
+  .content-block {
+    margin-top: 30px;
+  }
+
+  .wrapper {
+    width: 320px;
+  }
+
+  .content-block-title {
+    height: 60px;
+  }
+
+  .content-block-title h2 {
+    font-size: 30px;
+  }
+
+  .content-block-content {
+    margin-left: 5px;
+  }
+
+  .skills-container {
+    row-gap: 10px;
+    margin-left: 10px;
+  }
+
+  .skills-container p {
+    font-size: 20px;
+  }
+
+  .progress-container {
+    width: 290px;
+  }
+
+  .hard-skills-block {
+    height: 320px;
+    row-gap: 10px;
+  }
+
+  .skill-info-contaner {
+    padding-right: 10px;
+  }
+
+  .content-block-content-elem p {
+    margin: 5px;
+  }
+
+  .content-block-content-elem>.p1 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .content-block-content-elem>.p2 {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .content-block-content-elem>.p3 {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .education-block {
+    height: 360px;
+  }
+
+  .expirience-block {
+    height: 130px;
+  }
+
+  .soft-skills-block {
+    height: 290px;
+  }
+
+  .language-block {
+    height: 170px;
+  }
+
+  .language-block-elem p {
+    margin: 6px 5px;
+  }
+
+  .portfolio-block {
+    height: 426px;
+  }
+
+  .portfolio-links-container img {
+    width: 320px;
+    height: 280px;
+  }
+
+  .portfolio-block-content {
+    margin: 0;
+  }
+
+  .portfolio-links-container {
+    height: auto;
+  }
+
+  .arrow-container {
+    margin: 0 20px;
+  }
+
+  .contacts-block-elem a {
+    width: 90px;
+    height: 90px;
+  }
+
+  .contacts-block-elem {
+    display: flex;
+    padding-left: 28px;
+    padding-right: 0px;
+  }
+
+  .contacts-block-content {
+    margin-top: 10px;
+  }
+
+  .pdf-block {
+    height: 250px;
+  }
+
+  .pdf-block-elem img {
+    width: 155px;
+    height: 155px;
+  }
+
+  .pdf-block-elem img:hover {
+    width: 165px;
+    height: 165px;
+  }
 }
-
-/* >1280 */
-
-
-/* <1280 && >767 */
-/* <767 */
