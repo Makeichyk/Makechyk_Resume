@@ -1,31 +1,22 @@
 "use strict";
 
-// Progress bar
 const progressBars = document.querySelectorAll(".progress"),
   skillsClasses = ["html", "css", "js", "react"],
   skillsContainer = document.querySelector(".skills-container");
 
-function fillProgressBars(arr) {
-  progressBars.forEach((item, i) => item.classList.add(`${arr[i]}`));
+function fillProgressBars(skills) {
+  progressBars.forEach((item, i) => item.classList.add(`${skills[i]}`));
 }
 
 function showSkillsContainer() {
   skillsContainer.classList.add("show");
   skillsContainer.classList.remove("hide");
-  let timerProgressBars = setTimeout(fillProgressBars, 1500, skillsClasses);
+  let timerProgressBars = setTimeout(fillProgressBars, 500, skillsClasses);
 }
 
-window.addEventListener("scroll", function () {
-  if (window.pageYOffset >= 200) {
-    showSkillsContainer();
-  }
-});
-
-// portfolio slider
-
-const arrows = document.querySelectorAll(".arrow-container");
-const portfolioLinks = document.querySelector(".portfolio-links-container");
-const imgArr = portfolioLinks.querySelectorAll("img");
+const arrows = document.querySelectorAll(".arrow-container"),
+  portfolioLinks = document.querySelector(".portfolio-links-container"),
+  imgArr = portfolioLinks.querySelectorAll("img");
 
 let step = 0;
 
@@ -42,23 +33,52 @@ function slideRight() {
     imgArr[step].classList.toggle("hideImg");
     step++;
   }
-  console.log(step);
 }
 
 function slideLeft() {
-  if(step == 1){
+  if (step == 1) {
     imgArr[step - 1].classList.toggle("hideImg");
     step = imgArr.length;
     imgArr[step - 1].classList.toggle("hideImg");
-  }else{ 
+  } else {
     imgArr[step - 1].classList.toggle("hideImg");
     imgArr[step - 2].classList.toggle("hideImg");
     step--;
   }
-
-  console.log(step);
 }
 
 arrows[1].addEventListener("click", slideRight);
 arrows[0].addEventListener("click", slideLeft);
 slideRight();
+
+function updatePageProgressBar() {
+  let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  let height =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+
+  let scrolled = (winScroll / height) * 100;
+
+  document.querySelector(
+    ".content-progress-bar-progress"
+  ).style.width = `${scrolled}%`;
+}
+
+// ALL CONTENT_BLOCKS
+const contentBlocks = document.querySelectorAll(".content-block");
+
+function showInViewport() {
+  for (let i = 0; i < contentBlocks.length; i++) {
+    let rect = contentBlocks[i].getBoundingClientRect();
+    if (contentBlocks[0].getBoundingClientRect().y <= 500) {
+      showSkillsContainer();
+    }
+    if (rect.y <= 500) {
+      contentBlocks[i].classList.remove("hide");
+    }
+  }
+}
+
+contentBlocks.forEach((block) => block.classList.add("hide"));
+window.addEventListener("scroll", showInViewport);
+window.addEventListener("scroll", updatePageProgressBar);

@@ -1,14 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Roboto:wght@100;400&display=swap');
 
-/* HEADER */
-
-
 * {
   box-sizing: content-box;
-}
-
-body {
-  margin: 0 auto;
 }
 
 .hideImg {
@@ -29,9 +22,7 @@ body {
 
 .body {
   background-color: #2F2F2F;
-  width: 100vw;
-  height: 100vh;
-  margin: 0;
+  margin: 0 auto;
 }
 
 header {
@@ -93,7 +84,21 @@ header {
   margin: 59px 142px 0px 0px;
 }
 
-/* INFO BLOCK */
+.content-progress-bar {
+  align-self: auto;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  background-color: #5a5a5a;
+  height: 5px;
+}
+
+.content-progress-bar-progress {
+  width: 0px;
+  height: 5px;
+  background-color: #4f9e05bc;
+}
 
 .wrapper {
   margin: 0 auto;
@@ -106,6 +111,7 @@ header {
   background-color: #FFFFFF;
   display: flex;
   border-radius: 40px;
+  transition: opacity 1s;
 }
 
 .content-block-title {
@@ -175,8 +181,6 @@ header {
   color: #73808D;
 }
 
-/* HARD SKILLS */
-
 .hard-skills-block {
   height: 380px;
 }
@@ -186,7 +190,6 @@ header {
   display: flex;
   row-gap: 30px;
   flex-direction: column;
-  /* opacity: 0; */
   transition: opacity 0.5s;
 }
 
@@ -246,19 +249,14 @@ header {
   background: #82D7F7;
 }
 
-/* EDUCATION */
-
 .education-block {
   height: 400px;
 }
-
-/* EXPIRIENCE */
 
 .expirience-block {
   height: 262px;
 }
 
-/* SOFT SKILLS */
 .soft-skills-block {
   height: 390px;
 }
@@ -267,7 +265,6 @@ header {
   margin: 30px;
 }
 
-/* LANGUAGES */
 .language-block {
   height: 215px;
 }
@@ -276,8 +273,6 @@ header {
   letter-spacing: 8px;
   margin: 30px;
 }
-
-/* PORTFOLIO */
 
 .portfolio-block {
   height: 400px;
@@ -348,8 +343,6 @@ header {
   transform: rotate(180deg);
 }
 
-/* CONTACTS */
-
 .contacts-block {
   height: 130px;
 }
@@ -377,7 +370,6 @@ header {
   padding-left: 65px;
 }
 
-/* PDF */
 .pdf-block {
   height: 330px;
   margin-bottom: 30px;
@@ -588,6 +580,11 @@ header {
     align-items: center;
     margin-top: 15px;
   }
+
+  .pdf-block-elem img:hover {
+    width: 230px;
+    height: 230px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -752,7 +749,7 @@ header {
   }
 
   .pdf-block-elem img:hover {
-    width: 15px;
+    width: 165px;
     height: 165px;
   }
 }
